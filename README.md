@@ -2,7 +2,7 @@
 This is my submission for the technical test.
 
 ## Backend
-To run the backend please see the executable `jar` file in the `/dist` folder.
+To run the backend please see the executable `jar` file in the `/dist/backend` folder.
 
 Due to my inexperience with Java and Spring Boot I wasn't sure what was accepted as the "correct" way to package the `Java` code.
 
@@ -11,7 +11,7 @@ The backend will start on port `8080`.
 Please Note: As mentioned in the Skype interview, this is the first time I have done Java in about 6+ years, so the fact I got it working, for me is a win :D
 
 ## Frontend
-Within the dist folder you will also find the `JS`, `CSS` and `HTML` files needed to run the project.
+Within the `/dist/frontend` folder you will also find the `JS`, `CSS` and `HTML` files needed to run the project.
 
 Please note, that if you run the project this way, you will be responsible for making sure `CORs` aren't an issue.
 
