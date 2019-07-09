@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Steve Coleman-Williams
+This is my submission for the technical test.
 
-## Available Scripts
+## Backend
+To run the backend please see the executable `jar` file in the `/dist` folder.
 
-In the project directory, you can run:
+Due to my inexperience with Java and Spring Boot I wasn't sure what was accepted as the "correct" way to package the `Java` code.
 
-### `npm start`
+The backend will start on port `8080`.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Please Note: As mentioned in the Skype interview, this is the first time I have done Java in about 6+ years, so the fact I got it working, for me is a win :D
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Frontend
+Within the dist folder you will also find the `JS`, `CSS` and `HTML` files needed to run the project.
 
-### `npm test`
+Please note, that if you run the project this way, you will be responsible for making sure `CORs` aren't an issue.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Alternatively**, from within `/frontend` you can start the server using the following command `npm run review`.
 
-### `npm run build`
+Running this way will proxy all backend requests to `http://localhost:8080` if you changed the default port of the backend you will need to change it on line#5 of `package.json`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tests
+Unfortunately I haven't written any tests, this was due to the amount of time I spent teaching myself Spring Boot (see point about/refer to interview about never having used it again)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## ToDo
+If I were to have an unlimited amount of time, I would like improve the solution to
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. Add tests(!)
+2. Improve UX
+3. Allow multiple robots so as to support multiple clients (currently singleton)
+4. Improve UI
+5. Learn what is normal way of packaging `Java` technical tests.
